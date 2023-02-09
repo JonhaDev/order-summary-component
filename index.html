@@ -6,28 +6,34 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="mai.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
   
   <title>Frontend Mentor | Order summary card</title>
 
 </head>
 <body>
   <main class="card">
-    <header class="card--img-container">
-      <img src="/images/illustration-hero.svg" alt="">
+    <header class="card__hero">
+      <img class="card__img" src="/images/illustration-hero.svg" alt="">
     </header>
-    <h1 class="card--title">Order Summary</h1>
-    <p class="card--description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p> 
-    <div class="card--change-plan">
-      <div class="change-plan--img-container">
-        <img src="/images/icon-music.svg" alt="">
+    <section class="card__body">
+      <header class="card__title-container">
+        <h1 class="card__title">Order Summary</h1>
+      </header>
+      <p class="card__description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p> 
+      <div class="card__change-plan">
+        <img class="change-plan__img" src="/images/icon-music.svg" alt="">
+        <h2 class="change-plan__plan">Annual Plan</h2>
+        <p class="change-plan__price">$59.99/year</p>
+        <a class="change-plan__button" href="/">Change</a>
       </div>
-      <h2 class="change-plan--plan">Annual Plan</h2>
-      <p class="change-plan--price">$59.99/year</p>
-      <a href="/">Change</a>
-    </div>
-    <button class="primary-button">Proceed to Payment</button>
-    <button class="secundary-button">Cancel Order</button>
+      <button class="card__button card__button--primary">Proceed to Payment</button>
+      <button class="card__button card__button--secundary">Cancel Order</button>
+    </section>
   </main>
 
   <!-- <div class="attribution">
