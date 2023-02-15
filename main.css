@@ -25,6 +25,7 @@ body {
 
 .card {
   width: 85%;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
   place-self: center;
@@ -50,6 +51,7 @@ body {
   padding: 24px 0 12px;
   font-size: 1.3rem;
   font-weight: 900;
+  color: var(--dark-blue);
 }
 
 .card__description {
@@ -87,6 +89,7 @@ body {
   align-self: end;
   font-size: .8rem;
   font-weight: 900;
+  color: var(--dark-blue);
 }
 
 .change-plan__price {
@@ -94,7 +97,6 @@ body {
   grid-row: 2/3;
   font-size: .82rem;
   color: var(--desaturated-blue);
-
 }
 
 .change-plan__button {
@@ -131,4 +133,58 @@ body {
   font-weight: 900;
   background-color: transparent;
   color:var(--desaturated-blue)
+}
+
+@media (min-width:1440px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: 100% 45%;
+  }
+
+  .card {
+    width: 380px;
+  }
+
+  .card__body {
+    padding: 0 38px 38px;
+  }
+
+  .card__hero {
+    height: 180px;
+  }
+
+  .card__title-container .card__title {
+    padding: 28px 0 6px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    word-spacing: 0.2rem;
+  }
+
+  .card__description {
+    letter-spacing: 0;
+  }
+
+  .card__change-plan {
+    padding: 20px 18px;
+    column-gap: 16px;
+  }
+
+  .change-plan__plan {
+    place-self: end start;
+    font-size: .9rem;
+  }
+
+  .change-plan__price {
+    place-self: end start;
+    font-size: .92rem;
+  }
+
+  .card__button {
+    font-size: .8rem;
+    letter-spacing: .3px;
+  }
+
+  .card__button--primary {
+    margin: 28px 0 26px;
+  }
 }
